@@ -25,4 +25,8 @@
 	   }
    });
 
+   $('.servicelink').click(function(){
+	window.location = "./services.html";
+   });
+
 }(jQuery));

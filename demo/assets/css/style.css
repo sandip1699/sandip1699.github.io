@@ -97,8 +97,10 @@ img {max-width: 100%;}
 .portfoliowrapper .projsnap {width: 500px; flex: 0 0 auto;}
 .portfoliowrapper .projsnap img {border-radius: 25px;}
 .portfoliowrapper .prjinfo {width: calc(100% - 500px); flex: 0 0 auto; padding: 40px;}
-.portfoliocard {border-radius: 30px; padding: 15px; border: 1px solid #E7E7E7; box-shadow:1px 10px 43px 0px #ebe9e9;}
-.portfoliocard .projsnap img {border-radius: 30px;}
+.portfoliocard {border-radius: 30px; padding: 15px; margin-bottom: 30px; border: 1px solid #E7E7E7; box-shadow:1px 10px 43px 0px #ebe9e9;}
+.portfoliocard .projsnap img {border-radius: 30px;max-height: 325px;
+  width: 100%;
+  object-fit: cover;}
 .portfoliocard:hover {background: #F4F0EC;}
 .projectbody {padding-top: 20px;}
 .projectbody h5 {padding-top: 10px;}

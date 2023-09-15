@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Inspired eSolutions</title>
+    <title>Project Details | Inspired eSolutions</title>
     <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <meta content="assets/images/favicon.ico" itemprop="image">
     <!-- CSS -->
@@ -75,9 +75,15 @@
     <div class="pageinfo">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-              <div class="pagetitle">
-                <h1>Portfolio</h1>
+          <div class="col-md-12 d-flex justify-content-center">
+              <div class="pagetitle titlecenter">
+                <h1>Latest project</h1>
+                <nav aria-label="breadcrumb" class="pt-2 credcumpcenter">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Portfolio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Latest project</li>
+                  </ol>
+                </nav>
               </div>
           </div>
         </div>
@@ -87,21 +93,12 @@
 <!-- end main banner  -->
 
 <!-- Featured Portfolio  -->
-<section class="sections Featured-portfolio">
+<section class="sections pb-4">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-          <div class="portfoliowrapper wow fadeInUp">
-              <div class="projsnap">
-                <img src="assets/images/portfolio/p1.jpeg" alt="proj" />
-              </div>
-              <div class="prjinfo">
-                <h3 class="mb-3">Latest project name</h3>
-                <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.</p>
-                <p>Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
-                <a href="./project-details.html" class="roudbtn"><i class="fa-solid fa-chevron-right"></i></a>
-              </div>
-          </div>
+          <h3>Latest project</h3>
+          <p>Description of latest project goes here and work that needed to be done.</p>
       </div>
     </div>
   </div>
@@ -109,67 +106,18 @@
 <!-- End Featured Portfolio  -->
 
 <!-- Portfolio Lists  -->
-<section class="sections portfoliolist pt-2">
+<section class="sections portfoliolist massnaorygrid pt-0">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-          <div class="portfoliocard wow fadeInUp">
-              <div class="projsnap">
-                <img src="assets/images/portfolio/p1.jpeg" alt="proj" />
-              </div>
-              <div class="projectbody">
-                <h5>The Halrley Capital</h5>
-                <p>Mobile App Development</p>
-                <a href="./project-details.html" class="roudbtn"><i class="fa-solid fa-chevron-right"></i></a>
-              </div>
+    <div class="row" data-masonry='{"percentPosition": true }'>
+          <div class="projimg wow fadeInUp col-md-6">
+            <img src="assets/images/portfolio/proj-d1.jpeg" alt="proj" />
           </div>
-      </div>
-      <div class="col-md-4">
-          <div class="portfoliocard wow fadeInUp">
-              <div class="projsnap">
-                <img src="assets/images/portfolio/p2.jpeg" alt="proj" />
-              </div>
-              <div class="projectbody">
-                <h5>AirField Medical Corp. LLC</h5>
-                <p>Web Development</p>
-                <a href="./project-details.html" class="roudbtn"><i class="fa-solid fa-chevron-right"></i></a>
-              </div>
+          <div class="projimg wow fadeInUp col-md-6">
+            <img src="assets/images/portfolio/proj-d2.jpeg" alt="proj" />
           </div>
-      </div>
-      <div class="col-md-4">
-          <div class="portfoliocard wow fadeInUp">
-              <div class="projsnap">
-                <img src="assets/images/portfolio/p1.jpeg" alt="proj" />
-              </div>
-              <div class="projectbody">
-                <h5>Previous Project 3</h5>
-                <p>Web App Development</p>
-                <a href="./project-details.html" class="roudbtn"><i class="fa-solid fa-chevron-right"></i></a>
-              </div>
+          <div class="projimg wow fadeInUp col-md-6">
+            <img src="assets/images/portfolio/proj-d3.jpeg" alt="proj" />
           </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-          <div class="pageantion">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <i class="fa-solid fa-chevron-left"></i>
-                    </a>
-                  </li>
-                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                  </li>
-                </ul>
-            </nav>
-          </div>
-      </div>
     </div>
   </div>
 </section>
@@ -261,6 +209,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/wow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
 </html>

@@ -13,6 +13,7 @@ body a:hover {color: #DA7228;}
 .sections {padding: 70px 0px;}
 img {max-width: 100%;}
 .shape-four-img {border-radius:0px 160px 0px 300px;}
+.roudbtn {width: 40px; height: 40px; display: inline-flex; border-radius: 50%; background-color: #000; color: #fff; align-items: center; justify-content: center;}
 /* Header  */
 .site-headers .dropdown-menu {min-width: 530px; padding: 30px; border: none; background: #FFF; left: -200px; box-shadow: 1px 2px 22px rgba(0, 0, 0, 0.20); transform-origin: 0 0 0; transform: scaleY(0); transition: all 0.3s ease-in-out; }
 .site-headers .dropdown:hover .dropdown-menu { transform: scaleY(1);}
@@ -91,6 +92,26 @@ img {max-width: 100%;}
 .contact-forms textarea {height: 130px;}
 .contact-forms input:focus, .contact-forms textarea:focus {outline: none; border-color: #DA7228;}
 .bgblue {background-color: #31496E;}
+/* portfolio page  */
+.portfoliowrapper { display: flex; flex-wrap: wrap; padding: 30px; align-items: center; border-radius: 62px; border: 1px solid #E7E7E7; box-shadow:1px 10px 43px 0px #ebe9e9;}
+.portfoliowrapper .projsnap {width: 500px; flex: 0 0 auto;}
+.portfoliowrapper .projsnap img {border-radius: 25px;}
+.portfoliowrapper .prjinfo {width: calc(100% - 500px); flex: 0 0 auto; padding: 40px;}
+.portfoliocard {border-radius: 30px; padding: 15px; border: 1px solid #E7E7E7; box-shadow:1px 10px 43px 0px #ebe9e9;}
+.portfoliocard .projsnap img {border-radius: 30px;}
+.portfoliocard:hover {background: #F4F0EC;}
+.projectbody {padding-top: 20px;}
+.projectbody h5 {padding-top: 10px;}
+.projectbody p {color: #666666;font-weight: 300;padding-top:10px;}
+.projectbody a.roudbtn {background-color: #F4F0EC; color: #000;} 
+.portfoliocard:hover a.roudbtn {background-color: #fff;}
+.pageantion {margin-top: 40px; display: flex; justify-content: center;}
+.pageantion .page-link {color: #000; border-color: #DA7228;margin-right: 20px; border-radius: 50% !important;width: 40px; height: 40px; display: inline-flex;justify-content: center; align-items: center;}
+.pageantion .active .page-link {background-color: #F4F0EC !important;}
+.breadcrumb-item a {color: #000 !important;}
+.massnaorygrid .projimg {margin-bottom: 30px;}
+.titlecenter {text-align: center;}
+.credcumpcenter {display: flex; justify-content: center;}
 /* footer  */
 .site-footers {}
 .widget-title {padding-bottom: 15px;}
@@ -98,20 +119,33 @@ img {max-width: 100%;}
 .footer-widgets ul li a {display: inline-block; padding: 7px 0px; margin-bottom: 10px; color: #292F36;}
 .soical-links {list-style: none; padding: 0; margin: 0; margin-top: 30px; display: flex; flex-direction: row; }
 .soical-links li a {display: block; padding: 4px 10px !important; margin-right: 5px; color: #292F36;}
-.footer-widgets ul li a:hover {color: #DA7228;}
+.footer-widgets ul li a:hover {color: #CDA274;}
 
 /* responsive media query  */
 
+@media(max-width:1200px) {
+  .portfoliowrapper .projsnap {width: 300px; }
+  .portfoliowrapper .prjinfo {width: calc(100% - 300px);}
+}
 @media(max-width:992px) {
+  .portfoliowrapper .projsnap {width: 200px; }
+  .portfoliowrapper .prjinfo {width: calc(100% - 200px);padding: 15px;}
 .navbar-collapse {padding-top: 30px;}
 .site-headers .dropdown-menu {box-shadow: none; margin: 0px 0px 20px; min-width: 100%;transform: scaleY(1);display: block;
     padding: 20px; border: 1px solid #ddd;}
 .aboutrap h3 { font-size: 34px;}
 .about-us .aboutrap { border-radius: 30px; padding: 30px;}
 .shape-one-img { border-radius: 0px 80px 0px 80px;}
+.contact-forms {padding-top: 30px;}
 }
 
 @media(max-width:767px) {
+  .contact-info {width: 100%;}
+  .portfoliowrapper .prjinfo h3 {padding-top: 15px;}
+  .page-header {height: 160px;}
+  .pagetitle h1 {font-size: 30px;}
+  .portfoliowrapper .projsnap {width: 100%; }
+  .portfoliowrapper .prjinfo {width: 100%;}
 html body {font-size: 16px;}
 .slidewrapper { padding: 40px 0px; min-height: auto;}
 .navbar-collapse {padding-top: 30px;}

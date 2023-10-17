@@ -1,0 +1,112 @@
+/* common  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+html body {font-family: 'DM Sans', sans-serif;}
+body .text-primary {color: #F57005 !important;}
+body h1, body h2, body h3, body h4 {font-weight: 700;}
+body .btn-primary {
+    background-color: #F57005;
+    border: none !important;
+    position: relative; display: inline-flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    text-transform: capitalize;
+    padding: 10px 32px 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+body .btn-primary:hover {
+    background-color: #F57005;
+    border: none;
+}
+body .btn-primary i {
+    display: inline-block;
+    margin-left: 11px; 
+    position: relative;
+    top: 2px;
+}
+body .btn-curve {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    width: 33px;
+    height: 100%;
+    background: #F6F5F5;
+    opacity: 0.2;
+    z-index: 0;
+    -webkit-transform: skewX(-22deg);
+    transform: skewX(-22deg);
+    transition: all 0.5s ease;
+}
+.btn:hover .btn-curve {
+    right: 0;
+    width: 100%;
+    -webkit-transform: skewX(0deg);
+    transform: skewX(0deg);
+}
+.section {padding: 60px 0px;}
+.section-title { display: flex; justify-content: space-between; align-items: center;} 
+.section-title .titletext {flex:  0 0 auto; width: 70%;}
+.section-title a {flex:  0 0 auto; margin-left: auto;}
+/* Header  */
+header .navbar-light {background-color: #ebf1dc !important;}
+header .dropdown-menu {
+    background-color: white;
+    border-radius: 8px;
+    color: black !important;
+    min-width: 230px; border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 25px 70px 0px #01213A12;
+}
+header .dropdown-toggle::after {display: none;}
+header .navbar-nav li a {display: flex; align-items: center; color: #000; justify-content: space-between; padding: 10px 30px;}
+header .navbar-nav li [class^="ti-"] {font-size: 13px;}
+header .navbar-nav li.nav-item {margin: 0px 5px;}
+header .dropdown-item.active, header .dropdown-item:active { background: #fff6ef;}
+header .searchbtn {text-decoration: none;}
+@media all and (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 15px;
+        padding-left: 15px;
+        border-radius: 10px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:hover, .navbar-expand-lg .dropdown-item:focus, .navbar-expand-lg .dropdown-item:visited, .navbar-expand-lg .dropdown-item:hover { background: #fff6ef;}
+    .navbar-nav .dropdown:hover > .dropdown-menu {display: block !important; opacity: 1;}
+	.dropdown-menu li{
+		position: relative;
+	}
+	.dropdown-menu .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.dropdown-menu .submenu-left{ 
+		right:100%; left:auto;
+	}
+
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}
+@media (max-width: 991px) {
+.dropdown-menu .dropdown-menu{
+		margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+}
+}	
+/* banner section */
+.main-banner {background-color: #ebf1dc; padding: 70px 0px 0px; margin-bottom: 60px;}
+.main-banner .slidetexts {padding:50px 0px 30px;}
+.main-banner .slideimg {text-align: right;}
+.main-banner .carousel-control-next, .main-banner .carousel-control-prev {position: static; width: 30px; margin: 0px 30px;}
+.main-banner .carousel-indicators [data-bs-target] {background-color: #000; width: 7px; height: 5px; border-radius: 3px; transition: all 0.3s ease 0s;}
+.main-banner .carousel-indicators .active {width: 20px; background-color: #F57005;}
+.main-banner .carousel-indicators {position: static !important; margin: 0px !important;}
+.main-banner .slidecontrols { display: flex; position: absolute; bottom: -40px; justify-content: center; align-items: center; left: 0; right: 0;}
+.main-banner .slidecontrols .carousel-control-prev-icon {background-image: url(../images/banner/left-arrow-slider.svg); height: 14px;position: relative; top: 3px;}
+.main-banner .slidecontrols .carousel-control-next-icon {background-image: url(../images/banner/right-arrow-slider.svg);height: 14px;position: relative; bottom: 3px;}
+
+
+
+/* footer  */

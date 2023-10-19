@@ -35,13 +35,15 @@ header .dropdown-menu {
     box-shadow: 0px 25px 70px 0px #01213A12;
 }
 header .dropdown-toggle::after {display: none;}
-header .navbar-nav li a {display: flex; align-items: center; color: #000; justify-content: space-between; padding: 10px 30px;}
+header .navbar-nav li a {display: flex; align-items: center; color: #000; justify-content: space-between; padding: 10px 30px;font-weight: 600; position: relative;}
 header .navbar-nav li [class^="ti-"] {font-size: 13px;}
 header .navbar-nav li.nav-item {margin: 0px 5px;}
 header .dropdown-item.active, header .dropdown-item:active { background: var(--bs-theme-light);}
 header .searchbtn {text-decoration: none;}
 .site-headers.fixed {position: fixed; top: 0; left: 0; right: 0; z-index: 999;}
 .site-headers.fixed .navbar-light{background-color:#fff!important;box-shadow:0 0 60px 0 rgba(2,2,2,0.17);animation:slide-down .7s;opacity:1}
+.new_course{position:absolute;background:#fff;color:#fff;font-size:9px;border-radius:4px;border:1px solid;line-height:5px;padding:5px 8px;margin-left:-16px;margin-top:-34px;background:linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);background-size:400% 400%;animation:gradient 10s ease infinite}
+@keyframes gradient{0%{background-position:0% 50%}50%{background-position:100% 50%}to{background-position:0% 50%}}
 @keyframes slide-down {
 0%{opacity:5;transform:translateY(-100%)}
 100%{opacity:1;transform:translateY(0)}

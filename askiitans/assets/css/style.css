@@ -1,11 +1,13 @@
 /* common  */
-:root{--bs-theme:#F57005;--bs-theme-light:#fff6ef;--color-white:#fff;--color-black:#000}
+:root{--bs-theme:#F57005;--bs-theme-light:#fff6ef;--color-white:#fff;--color-black:#000; --light-orange:#fff7f3;}
 html body{font-family:'DM Sans',sans-serif}
 body .text-primary{color:var(--bs-theme)!important}
 body h1,body h2{font-weight:700}
 body .fs-7 {font-size: 14px;}
 body .fs-8 {font-size: 13px;}
 body a:hover{color:var(--bs-theme)}
+body .btn {box-shadow: none; transition: all 0.3s ease 0s;}
+body .btn:hover {box-shadow: 1px 1px 20px rgba(2, 2, 2, 0.12);}
 body .btn-outline-primary {border-color: var(--bs-theme); color: var(--bs-theme);padding: 10px 25px;font-size: 16px;}
 body .btn-primary{background-color:var(--bs-theme);border:none!important;position:relative;display:inline-flex;align-items:center;justify-content:center;font-size:18px;font-weight:500;border-radius:6px;text-transform:capitalize;padding:10px 32px;overflow:hidden;z-index:2}
 body .btn-primary:hover {background-color:var(--bs-theme);border:none;color: var(--color-white);}
@@ -21,6 +23,9 @@ body a {color: var(--bs-theme);text-decoration: none;}
 .section-title-center{text-align:center}
 body .nav-pills .nav-link.active,body .nav-pills .show>.nav-link,body .nav-pills .nav-link:hover{background-color:var(--bs-theme)!important;color:var(--color-white)!important}
 .bgimg{background-image:url(../images/bg-images.png);background-repeat:no-repeat;width:80px;height:80px}
+body .btn-sm { padding: 5px 10px !important;font-size: 14px !important;}
+body .btn-white, body .btn-white:hover {background-color: #ffffff !important; color: #000 !important;}
+body img {max-width: 100%;}
 /* loader  */
 .page_loader{position:fixed;left:0;right:0;top:0;bottom:0;z-index:1000;background:#fff;display:flex;align-items:center;justify-content:center;height:100vh; transition:all 0.7s ease 0s;}
 .page_loader.hideloader{top:-100%;height:0px;bottom: inherit;}
@@ -29,7 +34,8 @@ body .nav-pills .nav-link.active,body .nav-pills .show>.nav-link,body .nav-pills
 to{transform:rotate(.5turn)}
 }
 /* Header  */
-header .navbar-light {background-color: #ebf1dc !important;}
+.home header .navbar-light {background-color: #ebf1dc !important;}
+header .navbar-light {background-color: #fff !important;}
 header .dropdown-menu {
     background-color: white;
     border-radius: 8px;
@@ -67,6 +73,10 @@ header .searchbtn {text-decoration: none;}
 @media (max-width: 991px) {
 .dropdown-menu .dropdown-menu{margin-left:.7rem;margin-right:.7rem;margin-bottom:.5rem}
 }
+.modelsearch .modal-dialog { margin: 0px; width: 100%; max-width: 100%;} 
+.modelsearch .modal-content {border: none;border-radius: 0px;}
+.modelsearch .modal-body {padding: 60px 30px 100px;}
+.modelsearch .input-group-text { background: no-repeat; border-right: none;}
 /* page title  */
 header.subpages .navbar-light {
     background-color: #fff !important;
@@ -268,7 +278,7 @@ body .rescourcelinks .slidecontrols {bottom: -10px;}
 .features-listitms li i {width: 35px; color: var(--bs-theme);}
 
 /* form css  */
-body .form-group { position: relative; padding: 15px 0 0; margin-top: 10px; margin-bottom: 15px; width: 100%; height: 100%; position: relative; z-index: 10;}
+body .form-group {  padding: 15px 0 0; margin-top: 10px; margin-bottom: 15px; width: 100%; position: relative; z-index: 10;}
 body .form-control { width: 100%; margin-bottom: 15px; padding: 10px 18px; position: relative; z-index: 99;
   border: 1px solid #d9d9d9; outline: 0; height: auto; border-radius: 5px; font-size: 1rem; color: #777777; background: 0 0; transition: border-color .2s; }
   body .form-label {
@@ -306,3 +316,42 @@ body .form-check-input:checked { background-color: #f67012; border-color: #f6701
 .other-login-option .dvdr::after { right: 0; }
 .otheractions {padding-top: 40px; text-align: center; font-weight: 500; font-size: 18px;}
 .form-group .form-check {margin-right: 15px;}
+
+/* Forum page  */
+.forumsformsection {padding: 60px 0px 80px;}
+.inspirationsidebar {height: 100%; padding: 30px; background-color: #fff9f5;}
+.inspirationsidebar .course-img img {height: auto;}
+.inspirationsidebar .course-body, .inspirationsidebar .course-footer {background-color: #fff;}
+.note-content {padding: 10px; border-radius: 5px; font-size: 13px; color: #858282; border: 1px solid #ddd;}
+.usercomments {display: flex;align-items: flex-start;padding-bottom: 10px;}
+.usercomments img {width: 30px;flex: 0 0 auto; margin-right: 10px;}
+.usercomments .comments {flex: 0 0 auto; width: calc(100% - 50px);}
+.userlists {margin-top: 30px;padding-bottom: 20px;border: 1px solid #ddd; padding: 15px;}
+.userlists .commentfooter {display: flex; justify-content: space-between;}
+
+/* examp info page  */
+.article-content h2, .article-content h3, .article-content h4, .article-content h5 {margin-top: 30px;margin-bottom: 15px; font-weight: 600;}
+.signupbox {padding: 30px; background-color: var(--bs-theme); color: #fff;border-radius: 5px;}
+.course-card.inline-img {display: flex; background: #fff; align-items: center; border: 1px solid #ddd; border-bottom: 3px solid;  border-radius: 5px;padding: 10px;margin-bottom: 15px;}
+.course-card.inline-img  .course-body img {height: 30px;}
+.course-card.inline-img .course-body h4 {display: block;margin-top: 8px;color: #000;}
+.course-card.inline-img:nth-child(1){border-bottom-color:#e8d368;color:#21354b}
+.course-card.inline-img:nth-child(2){border-bottom-color:#083360;color:#083360}
+.course-card.inline-img:nth-child(3){border-bottom-color:#831cf9;color:#831cf9}
+.course-card.inline-img:nth-child(4){border-bottom-color:#65860e;color:#65860e}
+
+/* about page  */
+.aboutiitian i {font-size: 14px;}
+.aboutiitian h5 {padding-top: 10px;margin-bottom: 10px;}
+.aboutbginfo {background-color: var(--light-orange);}
+.listparagraph p {display: flex; align-items: flex-start;}
+.listparagraph p i {position: relative; top: 5px; margin-right: 7px;}
+.teaminfo {display: flex; justify-content: center;}
+.teaminfo .team {padding: 15px; text-align: center;}
+.teaminfo .team img {border-radius: 5px; box-shadow: 1px 1px 10px rgba(2, 2, 2, 0.12);}
+.teaminfo .team h5 {margin-top: 10px;}
+
+/* course details page  */
+.course-banner {background: #fff7f3;padding: 80px 0px;}
+.featuresth {min-width: 600px;}
+.table th, .table td {padding: 10px 15px !important;}

@@ -375,7 +375,7 @@ body .sendothernub:hover {color: var(--bs-theme) !important;}
 .otheractions {padding-top: 40px; text-align: center; font-weight: 500; font-size: 18px;}
 .form-group .form-check {margin-right: 15px;}
 .otpconainer {display: flex;}
-.otpconainer input {width: 50px; margin-right: 15px;}
+.otpconainer input {width: 50px; margin-right: 15px;padding: 10px;}
 .otpnumber, .inpunumber {display: none;}
 .inpunumber.active, .otpnumber.active {display: block;}
 /* Forum page  */
@@ -421,20 +421,13 @@ body .sendothernub:hover {color: var(--bs-theme) !important;}
 .todayinspiration {padding: 30px 0px 80px;}
 body .card {border: none;  box-shadow: 1px 1px 10px rgba(2, 2, 2, 0.12);margin-top: 30px;}
 body .card .card-img {padding: 15px;}
-body .subheading {overflow: hidden;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;    min-height: 49px;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;}
+body .subheading {overflow: hidden; -webkit-box-orient: vertical; display: -webkit-box;    min-height: 49px; text-overflow: ellipsis; -webkit-line-clamp: 2;}
 body .card-body {padding-bottom: 30px;}
-
 /* Responsive media query  */
 @media (max-width:992px) {
-    .navbar-collapse {background-color: #fff; padding-top: 30px; padding-bottom: 30px; max-height: calc(100vh - 100px);
-        overflow: auto;}
-    .dropdown:hover .submenu.dropdown-menu, .dropdown:focus .submenu.dropdown-menu {
-        display: block;
-    }
+    .navbar-collapse {background-color: #fff; padding-top: 30px; padding-bottom: 30px; max-height: calc(100vh - 100px); overflow: auto;}
+    .dropdown:hover .submenu.dropdown-menu, .dropdown:focus .submenu.dropdown-menu { display: block;}
+    .bottom-loginfo img {height: auto;}
 }
 @media (max-width:767px) {
     .section-title {flex-wrap: wrap;}
@@ -445,12 +438,18 @@ body .card-body {padding-bottom: 30px;}
     .top-socials.infos {display: none;}
     .topbar .infos.top-email {justify-content: space-between;}
     .navbar-brand { padding-left: 40px;}
-    .features .feature-list {min-width: 40% !important;
-        width: 40%; }
-        .features .feature-list h4 {white-space: wrap;}
+    .features .feature-list {min-width: 40% !important; width: 40%; }
+    .features .feature-list h4 {white-space: wrap;}
     body .nav-pills {flex-wrap: nowrap; width: 100%; overflow: auto; padding-bottom: 20px;}
     .footer-section .widgets h4 {margin-top: 30px; margin-bottom: 10px;}
     .main-banner .slidetexts {padding-top: 0px;}
     .main-banner {padding-top: 30px;}
     .insp-img {margin-top: 60px;}
+    .loginmodel .modal-dialog { min-width: 90%;}
+    .other-login-option .btn {margin-bottom: 15px;}
+    .otpconainer input {width: 40px;padding: 4px;}
+    .loginwrapper {flex-wrap: wrap;}
+    .bottom-loginfo {display: none;}
+    .loginwrapper .leftwrap, .loginwrapper .rightwrap {width: 100%; height: auto;padding: 15px;}
+
 }

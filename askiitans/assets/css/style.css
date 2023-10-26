@@ -156,7 +156,7 @@ body .nav-pills .nav-link {background-color: var(--bs-theme-light);color: var(--
     min-height: 248px;
 }
 /* resource section  */
-.resourcesection {padding-top: 70px;}
+.resourcesection {padding-top: 70px; padding-bottom: 70px; background: #fff7f3; margin-top: 50px; border-radius: 5px; padding-left: 30px; padding-right: 30px;}
 .resource-list {display: flex; flex-wrap: wrap;  align-items: center; margin-top: 30px;}
 .resource-list .resource-card {display: flex;align-items: center;color: var(--color-black); text-decoration: none; padding: 15px; margin-right: 30px; margin-bottom: 30px;transition: all 0.3s ease 0s; box-shadow: 0px 0px 60px 0px rgba(2, 2, 2, 0.07); border-radius: 15px; background: #fff;}
 .resource-list .resource-card:hover {background-color: var(--bs-theme); color: var(--color-white);} 
@@ -352,6 +352,7 @@ body .form-check-input:checked { background-color: #f67012; border-color: #f6701
 .loginmodel .modal-dialog {
     min-width: 590px;
 } 
+body .sendothernub:hover {color: var(--bs-theme) !important;}
 .loginmodel .modal-body {padding: 30px;}
 .loginformswrapper {display: none;}
 .loginformswrapper.active {display: block;}
@@ -414,6 +415,17 @@ body .form-check-input:checked { background-color: #f67012; border-color: #f6701
 .course-banner {background: #fff7f3;padding: 80px 0px;}
 .featuresth {min-width: 600px;}
 .table th, .table td {padding: 10px 15px !important;}
+
+/* blogs  */
+.todayinspiration {padding: 30px 0px 80px;}
+body .card {border: none;  box-shadow: 1px 1px 10px rgba(2, 2, 2, 0.12);margin-top: 30px;}
+body .card .card-img {padding: 15px;}
+body .subheading {overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;    min-height: 49px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;}
+body .card-body {padding-bottom: 30px;}
 
 /* Responsive media query  */
 @media (max-width:992px) {

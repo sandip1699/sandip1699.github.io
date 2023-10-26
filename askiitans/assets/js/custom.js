@@ -25,6 +25,41 @@
 	   }
    });
 
+$('.menubtn').click(function(){
+	$('body').addClass('opensidebar');
+});   
+$('.sideopenbg').click(function(){
+	$('body').removeClass('opensidebar');
+});   
+$('.signup').click(function(){
+	$('.loginwrappr').removeClass('active');
+	$('.signupwrapper').addClass('active');
+});   
+$('.login').click(function(){
+	$('.signupwrapper').removeClass('active');
+	$('.loginwrappr').addClass('active');
+});   
+$('.logwithphone').click(function(){
+	$(this).removeClass('activeitem');
+	$('.loginwithphone').addClass('activation');
+	$('.loginwithemail').removeClass('activation');
+	$('.logwithemail').addClass('activeitem');
+});   
+$('.getotp').click(function(){
+	$('.otpnumber').addClass('active');
+	$('.inpunumber').removeClass('active');
+});
+$('.sendothernub').click(function(){
+	$('.otpnumber').removeClass('active');
+	$('.inpunumber').addClass('active');
+});
+$('.logwithemail').click(function(){
+	$(this).removeClass('activeitem');
+	$('.loginwithphone').removeClass('activation');
+	$('.loginwithemail').addClass('activation');
+	$('.logwithphone').addClass('activeitem');
+});   
+
 //    input 
 function checkForInput(element) {
 	// element is passed to the function ^

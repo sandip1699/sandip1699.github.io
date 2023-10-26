@@ -19,6 +19,54 @@
 </div>
 <!-- Header  -->
 <header class="site-headers">
+  <a class="menubtn">
+    <div class="lines1"><div class="line"></div><div class="line hide-line"></div><div class="line"></div></div>
+  </a>
+  <div class="sideopenbg">
+    <i class="ti-close"></i>
+  </div>
+  <div class="sidebarwrapper">
+      <ul class="sidebarmenu">
+        <li><a href="#"> <i class="ti-home"></i> Home </a></li>
+        <li><a href="#"> <i class="ti-desktop"></i> My Class </a></li>
+        <li><a href="#"> <i class="ti-video-camera"></i> Test Series </a></li>
+        <li><a href="#"> <i class="ti-help"></i> Questions </a></li>
+        <li><a href="#"> <i class="ti-user"></i> Profile </a></li>
+      </ul>
+  </div>
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="top-email infos">
+              <a href="mailto:help@askiitians.com" target="_blank"><i class="ti-email"></i> help@askiitians.com </a>
+              <a href="tel:7353221155" class="ms-3" target="_blank">
+                <i class="ti-mobile"></i>
+                <span> +91 7353221155 </span>
+              </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="top-socials infos">
+            <ul class="social-link">
+              <li>
+                  <a href="https://www.facebook.com/askiitians" target="_blank"><i class="ti-facebook"></i></a>
+              </li>
+              <li>
+                  <a href="https://twitter.com/askiitians" target="_blank"><i class="ti-twitter"></i></a>
+              </li>
+              <li>
+                  <a href="https://www.instagram.com/askiitians/" target="_blank"><i class="ti-instagram"></i></a>
+              </li>
+              <li>
+                  <a href="https://www.youtube.com/user/askiitians" target="_blank"><i class="ti-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
       <a class="navbar-brand" href="index.html">
@@ -46,16 +94,15 @@
                     <li><div><a href="exam-info.html" class="dropdown-item"> JEE Advanced Coaching </a></div></li><li><div><a href="/iit-jee/advanced/crack-jee-advanced-in-1-year" class="dropdown-item"> 1 Year Study Plan </a></div></li><li><div><a href="/iit-jee/advanced/solutions.html" class="dropdown-item"> Solutions </a></div></li><li><div><a href="/iit-jee/advanced/answer-key.html" class="dropdown-item"> Answer Key </a></div></li><li><div><a href="/iit-jee/advanced/cut-off.html" class="dropdown-item"> Cut off </a></div></li><li><div><a href="/iit-jee/advanced/rank-predictor.html" class="dropdown-item"> Rank Predictor </a></div></li><li><div><a href="/iit-jee/advanced/paper-pattern.html" class="dropdown-item"> Paper Pattern </a></div></li><li><div><a href="/iit-jee/advanced/important-books.html" class="dropdown-item"> Important Books </a></div></li><li><div><a href="/iit-jee/advanced/sample-papers.html" class="dropdown-item"> Sample Papers </a></div></li><li><div><a href="/iit-jee/advanced/past-year-papers" class="dropdown-item"> Past Papers </a></div></li><li><div><a href="/iit-jee/advanced/preparation-tips.html" class="dropdown-item"> Preparation Tips </a></div></li><li><div><a href="/iit-jee/advanced/news" class="dropdown-item"> Latest News </a></div></li>
                   </ul>
               </li>
-              
               <li>
                 <a class="dropdown-item" href="#">
                   Medical Exams <i class="ti-angle-right ms-2"></i>
                  </a>
                 <ul class="submenu dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">NEET (AIPMT) <i class="ti-angle-right ms-2"></i></a>
+                    <a class="dropdown-item" href="exam-info.html">NEET (AIPMT) <i class="ti-angle-right ms-2"></i></a>
                     <ul class="submenu dropdown-menu">
-                      <li><div><a href="/medical-exams/aiims" class="dropdown-item"> AIIMS Examination </a></div></li>
+                      <li><div><a href="exam-info.html" class="dropdown-item"> AIIMS Examination </a></div></li>
                     </ul>
                   </li>
                   <li>
@@ -90,8 +137,8 @@
         </ul>
         <div class="d-flex align-items-center">
           <!-- <input class="form-control me-4" type="search" placeholder="Search here" aria-label="Search"> -->
-          <a data-bs-toggle="modal" data-bs-target="#searchModal" class="searchbtn me-3 fs-5 text-dark"><i class="ti-search ms-2"></i></a>
-          <a href="login.html" class="btn btn-primary"><span class="btn-curve"></span>Login<i class="ti-arrow-right"></i></a>
+          <a data-bs-toggle="modal" data-bs-target="#searchModal" class="searchbtn me-4 fs-5 text-dark"><i class="ti-search ms-2"></i></a>
+          <a data-bs-toggle="modal" data-bs-target="#loginModal"  class="btn btn-primary"><span class="btn-curve"></span>Login<i class="ti-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -111,6 +158,7 @@
           <div class="input-group">
             <span class="input-group-text"><i class="ti-search"></i></span>
             <input type="text" class="m-0 form-control form-control-lg text-dark-1 fw-500" placeholder="What do you want to learn?" autocomplete="off">
+            <button type="submit" class="input-group-button btn-primary btn">Search</button>
           </div>
         </form>
       </div>
@@ -354,171 +402,97 @@
 
 
 
-<section class="livecourse">
+
+<section class="section inspred-teachers">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
           <div class="section-title wow fadeInUp">
             <div class="titletext">
-              <h2>askIITians LIVE Courses</h2>
-              <p class="mb-0">Live interactive classes Learn faster, learn precisely what you need.</p>
+              <h2>Greatest Teachers Inspire</h2>
+              <p>Piloting the dreams of millions with knowledge and expertise.4.5 crore hours, 10 lakh students in 1000 cities and 50+ countries. </p>
             </div>
-            <div class="course-dropdown">
-              <select class="form-select">
-                  <option>Grade 12</option>
-                  <option>Grade 11</option>
-                  <option>Grade 10</option>
-                  <option>Grade 9</option>
-                  <option>Grade 8</option>
-                  <option>Grade 7</option>
-                  <option>Grade 6</option>
-              </select>
-            </div>
+            <a href="#" class="btn btn-primary"><span class="btn-curve"></span>View our Teachers <i class="ti-arrow-right"></i></a>
           </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="course-list">
-  <div class="container">
-    <div class="row">
-      <!-- course loop  -->
-      <div class="col-md-4">
-          <div class="course-card">
-             <div class="course-img">
-               <img src="assets/images/courses/grade-9-silver.png" alt="course" />
-             </div>
-             <div class="course-body">
-                <span class="coursetype new_course">Live classes</span>
-                <h4>One Year Classroom Foundation Program for Grade 9</h4>
-                <div class="c-info">
-                  <div><span>Batch Size :</span> <strong>60</strong></div>
-                  <div><span>Duration :</span> <strong>1 Year </strong> </div>
-                </div>
-                <div class="price">
-                    <span>₹ 135000</span> <small class="text-muted px-2">|</small> <span>$ 1600</span>
-                </div>
-             </div>
-             <div class="course-footer">
-                  <a href="#" class="btn btn-outline-primary">View Course</a>
-                  <a href="#" class="btn btn-primary"><span class="btn-curve"></span>Buy Now <i class="ti-arrow-right"></i></a>
-             </div>
-          </div>
-      </div>
-      <!-- course loop  -->
-      <div class="col-md-4">
-          <div class="course-card">
-             <div class="course-img">
-               <img src="assets/images/courses/grade-9-silver.png" alt="course" />
-             </div>
-             <div class="course-body">
-                <span class="coursetype new_course">Live classes</span>
-                <h4>One Year Classroom Foundation Program for Grade 9</h4>
-                <div class="c-info">
-                  <div><span>Batch Size :</span> <strong>60</strong></div>
-                  <div><span>Duration :</span> <strong>1 Year </strong> </div>
-                </div>
-                <div class="price">
-                    <span>₹ 135000</span> <small class="text-muted px-2">|</small> <span>$ 1600</span>
-                </div>
-             </div>
-             <div class="course-footer">
-                  <a href="#" class="btn btn-outline-primary">View Course</a>
-                  <a href="#" class="btn btn-primary"><span class="btn-curve"></span>Buy Now <i class="ti-arrow-right"></i></a>
-             </div>
-          </div>
-      </div>
-      <!-- course loop  -->
-      <div class="col-md-4">
-          <div class="course-card">
-             <div class="course-img">
-               <img src="assets/images/courses/grade-9-silver.png" alt="course" />
-             </div>
-             <div class="course-body">
-                <span class="coursetype new_course">Live classes</span>
-                <h4>One Year Classroom Foundation Program for Grade 9</h4>
-                <div class="c-info">
-                  <div><span>Batch Size :</span> <strong>60</strong></div>
-                  <div><span>Duration :</span> <strong>1 Year </strong> </div>
-                </div>
-                <div class="price">
-                    <span>₹ 135000</span> <small class="text-muted px-2">|</small> <span>$ 1600</span>
-                </div>
-             </div>
-             <div class="course-footer">
-                  <a href="#" class="btn btn-outline-primary">View Course</a>
-                  <a href="#" class="btn btn-primary"><span class="btn-curve"></span>Buy Now <i class="ti-arrow-right"></i></a>
-             </div>
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section faq-section pt-4">
-  <div class="container">
     <div class="row">
       <div class="col-md-12">
-          <div class="section-title-center wow fadeInUp">
-              <h2>Why study with Us?</h2>
-              <p>Find out why student loves askIITians</p>
-          </div>
-      </div>
-    </div>
-    <div class="row mt-4 align-items-center">
-      <div class="col-md-4">
-        <img src="assets/images/courses/student.svg" alt="course" />
-      </div>
-      <div class="col-md-8">
-      <div class="col-md-8 mx-auto">
-        <div class="accordion wow fadeInUp" id="accordionFaq">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Personalized Learning Environment
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFaq">
-              <div class="accordion-body">
-                One-to-one flexible online coaching courses to help you expand your study horizons. Get access to the undivided attention of our mentors at a single swipe! Offering comprehensive coaching guides through blended learning and practical advice to shape academic missions.
+        <div class="teachers-slider">
+          <div id="inspiredTeachers" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="teacherscard">
+                        <img src="assets/images/expert/Kanikamam.png" alt="Kanika">
+                        <h3>Kanika Kalra</h3>
+                        <div class="text-muted">Mathematics</div>
+                        <p>IIT Roorkee</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="teacherscard">
+                        <img src="assets/images/expert/aniksir.png" alt="Anik">
+                        <h3>Anik Ghosh</h3>
+                        <div class="text-muted">Chemistry</div>
+                        <p>NIT Jamshedpur</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="teacherscard">
+                        <img src="assets/images/expert/harshpatodia.png" alt="Harsh">
+                        <h3>Harsh Patodia</h3>
+                        <div class="text-muted">Mathematics</div>
+                        <p>IIT Roorkee</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="teacherscard">
+                        <img src="assets/images/expert/Kanikamam.png" alt="Kanikamam">
+                        <h3>Kanika Kalra</h3>
+                        <div class="text-muted">Mathematics</div>
+                        <p>IIT Roorkee</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="teacherscard">
+                        <img src="assets/images/expert/aniksir.png" alt="Kanikamam">
+                        <h3>Anik Ghosh</h3>
+                        <div class="text-muted">Chemistry</div>
+                        <p>NIT Jamshedpur</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="teacherscard">
+                        <img src="assets/images/expert/harshpatodia.png" alt="Kanikamam">
+                        <h3>Harsh Patodia</h3>
+                        <div class="text-muted">Mathematics</div>
+                        <p>IIT Roorkee</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Flexible  Scheduling Options
+            <div class="slidecontrols">
+              <button class="carousel-control-prev" type="button" data-bs-target="#inspiredTeachers" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
               </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
-              <div class="accordion-body">
-                You need not worry about your online class timings. We are available for you at your convenience to suit your individual study needs. Let us know what time works best for you and we will make every effort to work with your schedule.
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#inspiredTeachers" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#inspiredTeachers" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#inspiredTeachers" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subjectTopic" aria-expanded="false" aria-controls="subjectTopic">
-                Systematic Guidance from IITians
+              <button class="carousel-control-next" type="button" data-bs-target="#inspiredTeachers" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
               </button>
-            </h2>
-            <div id="subjectTopic" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaq">
-              <div class="accordion-body">
-                Unlimited access to the most talented resources from the most prestigious places. Our mentors are trained to understand your academic needs and engage you in strategic study programs to equip you with every problem-solving skill to help you achieve your academic goals.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qualifications" aria-expanded="false" aria-controls="qualifications">
-                Regular Performance Assessment
-              </button>
-            </h2>
-            <div id="qualifications" class="accordion-collapse collapse" aria-labelledby="qualifications" data-bs-parent="#accordionFaq">
-              <div class="accordion-body">
-                Regular and timely assessment of your performance is an integral part of our program. Performance assessment keeps you on track. Our mentors monitor your progress consistently and work on your weaknesses to help you boost your performance and confidence. 
-              </div>
             </div>
           </div>
         </div>
@@ -526,6 +500,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="section inspired-results">
   <div class="container">
@@ -709,7 +684,7 @@
   </div>
 </section>
 
-<section class="bgfooter">
+<section class="">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -749,6 +724,74 @@
     </div>
   </div>
 </section>
+
+<section class="section faq-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="section-title-center wow fadeInUp">
+              <h2>FAQ’s Section</h2>
+              <p>Frequently Asked QAs from Our Expert Educators </p>
+          </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-8 mx-auto">
+        <div class="accordion wow fadeInUp" id="accordionFaq">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How helpful are IIT JEE and NEET online coaching courses?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">
+                Very helpful, if you are sincerely interested in cracking these prestigious exams. Apart from expert guidance, you will need to put in your sincere effort with complete determination to achieve your goals. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What are the different study activities included in the courses?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">
+                You will have access to live classes, recorded lectures and test series. You will also receive specially designed study materials from our academic experts and mentors. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subjectTopic" aria-expanded="false" aria-controls="subjectTopic">
+                What if I still have doubts about a particular subject or topic?
+              </button>
+            </h2>
+            <div id="subjectTopic" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">
+                We have separate doubt-clearing sessions for this purpose. Moreover, you will also have access to recorded lectures. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#qualifications" aria-expanded="false" aria-controls="qualifications">
+                What qualifications and experience do mentors and coaches at askIITians hold?
+              </button>
+            </h2>
+            <div id="qualifications" class="accordion-collapse collapse" aria-labelledby="qualifications" data-bs-parent="#accordionFaq">
+              <div class="accordion-body">
+                We are associated with ex-IITians and experts from engineering and medical colleges for the coaching and study talks. We also get subject matter experts from specific fields to meet our students' specific study needs. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
 <!-- Footer  -->
@@ -833,6 +876,148 @@
   </div>
 </section>
 
+<!-- Login popup  -->
+<div class="modal fade loginmodel" id="loginModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- login  -->
+        <div class="loginformswrapper loginwrappr active">
+          <div class="cenntertitle text-center">
+            <h2>Login to askIITians</h2>
+            <div class="title-divider"></div>
+          </div>
+          <form class="mt-5">
+            <div class="loginwithphone activation">
+              <div class="form-group inpunumber active">
+                <input type="number" class="form-control" id="phonenumber" required="required"/>
+                <label class="form-label">Enter Phone Number</label>
+              </div>
+              <div class="form-group otpnumber">
+                <h6 class="fw-bold">Enter OTP</h6>
+                <div class="otpconainer mb-3">
+                  <input type="text" maxlength="1" autofocus="" class="text-center form-control">
+                  <input type="text" maxlength="1" class="text-center form-control">
+                  <input type="text" maxlength="1" class="text-center form-control">
+                  <input type="text" maxlength="1" class="text-center form-control">
+                  <input type="text" maxlength="1" class="text-center form-control">
+                  <input type="text" maxlength="1" class="text-center form-control">
+                </div>
+                <p> Did Not Received OTP ? <a class="text-primary ms-1"> Send OTP Again</a></p>
+                <a class="text-dark sendothernub">Send OTP To Another Number</a>
+              </div>
+            </div>
+            <div class="loginwithemail">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" required="required"/>
+                <label class="form-label">Enter Email Address</label>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" required="required"/>
+                <label class="form-label">Enter your Password</label>
+              </div>
+            </div>
+            <div class="mb-3 pt-3">
+              <button type="submit" class="btn btn-primary getotp"><span class="btn-curve"></span>Login<i class="ti-arrow-right"></i></button>
+            </div>
+          </form>
+          <div class="other-login-option">
+              <div class="dvdr">OR</div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <a class="btn btn-outline-primary me-3 logwithphone activeitem">Login With Phone</a>
+                  <a class="btn btn-outline-primary me-3 logwithemail">Login With Email</a>
+                  <a class="btn btn-outline-primary gbtn"> <img src="assets/images/icons/google.svg" class="me-2" alt="login with Google"/> Connect with Google</a>
+                </div>
+              </div>
+          </div>
+          <div class="otheractions">
+              <p>Don't have a account? <a class="ms-1 signup">Sign up</a></p>
+          </div>
+        </div>
+        <!-- signup  -->
+        <div class="loginformswrapper signupwrapper">
+          <div class="cenntertitle text-center">
+            <h2>Sign Up to askIITians</h2>
+            <div class="title-divider"></div>
+          </div>
+          <form class="mt-5">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" required="required"/>
+              <label class="form-label">Name</label>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" id="phonenumber" required="required"/>
+              <label class="form-label">Enter Phone Number</label>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" required="required"/>
+              <label class="form-label">Enter Email Address</label>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password" required="required"/>
+              <label class="form-label">Enter your Password</label>
+            </div>
+            <div class="form-group">
+              <h6 class="fw-bold mb-2">Select grade of the Student</h6>
+              <div class="d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grade" id="six">
+                  <label class="form-check-label" for="six">
+                      6th
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grade" id="seven" checked>
+                  <label class="form-check-label" for="seven">
+                    7th
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grade" id="eigth">
+                  <label class="form-check-label" for="eigth">
+                    8th
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grade" id="nine">
+                  <label class="form-check-label" for="nine">
+                    9th
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grade" id="tenth">
+                  <label class="form-check-label" for="tenth">
+                    10th
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grade" id="eleven">
+                  <label class="form-check-label" for="eleven">
+                    11th
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grade" id="twelve">
+                  <label class="form-check-label" for="twelve">
+                    12th
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 pt-3">
+              <button type="submit" class="btn btn-primary"><span class="btn-curve"></span>Sign Up<i class="ti-arrow-right"></i></button>
+            </div>
+          </form>
+          <div class="otheractions">
+              <p>Already have a account? <a class="ms-1 login">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Login popup  -->
 <!-- java scripts  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

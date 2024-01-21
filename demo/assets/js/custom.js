@@ -24,9 +24,37 @@
 		   $navbar.removeClass("fixed");
 	   }
    });
-
-   $('.servicelink').click(function(){
-	window.location = "./services.html";
+   $('.dropmenutoogle').click(function(){
+	$('.dropdown').toggleClass('show');
    });
+
+	if( $('.grids').length){ 
+		setTimeout(() => {
+			$(".grids").imagesLoaded(function () {
+				$('.grids').masonry({
+					itemSelector: '.projimg'
+				});
+			});
+		}, 600);
+		$('.nav-pills button').click(function(){
+			setTimeout(() => {
+				$('.grids').masonry({
+					itemSelector: '.projimg'
+				});
+			}, 200);
+		});
+	}
+   
+	$('.servicelink').click(function(){
+	 window.location = "./services.html";
+	});
+	$('.servicelinkprojects').click(function(){
+	 window.location = "../services.html";
+	});
+	$('.navbar .dropdown').hover(function() {
+		$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+	  }, function() {
+		$(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
+	  });
 
 }(jQuery));
